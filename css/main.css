@@ -718,6 +718,34 @@ main.aromatics p {
   color: #33312B;
 }
 
+.ganaderia {
+  padding: 0 16px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ganaderia h1 {
+  font-family: lato;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #AD8020;
+}
+.ganaderia h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #33312B;
+}
+
+.ganaderia-r {
+  padding: 0 16px;
+}
+
 .planta {
   width: 100%;
   aspect-ratio: 1/1;

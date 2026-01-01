@@ -1,0 +1,33 @@
+// variables
+@use "../utilities/variables" as *;
+
+.ganaderia {
+    padding: 0 16px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    h1 {
+        font-family: lato;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: $ocre;
+    }
+
+    h3 {
+        font-family: "Lato", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $text;
+    }
+}
+
+.ganaderia-r {
+    padding: 0 16px;
+}
