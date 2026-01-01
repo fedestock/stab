@@ -1,0 +1,113 @@
+// variables
+@use "../utilities/variables" as *;
+
+.planta {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    .bg-molle {
+        background-image: url("../img/Schinus_johnstonii\ molle\ blanco.jpg");
+    }
+
+    .bg-chañar {
+        background-image: url("../img/chañar.jpg");
+    }
+
+    .bg-jarilla {
+        background-image: url("../img/jarilla.jpg");
+    }
+
+    .bg-atamisqui {
+        background-image: url("../img/altamisqui.jpeg");
+    }
+
+    .bg-calden {
+        background-image: url("../img/calden2.jpg");
+    }
+
+    .bg-piquillin {
+        background-image: url("../img/piquilin.jpg");
+    }
+
+    .bg-pichana {
+        background-image: url("../img/senna.jpg");
+    }
+
+    .bg-llaolin {
+        background-image: url("../img/llaollin.jpg");
+    }
+
+    .bg-zampa {
+        background-image: url("../img/zampa.jpeg");
+    }
+
+    .bg-solupe {
+        background-image: url("../img/solupe.jpeg");
+    }
+
+    .bg-chilladora {
+        background-image: url("../img/chilladora1.jpg");
+    }
+
+    .bg-yaullin {
+        background-image: url("../img/llaullin.jpg");
+    }
+
+    .bg-brusquilla {
+        background-image: url("../img/brusquilla.jpg");
+    }
+
+    .bg-olivillo {
+        background-image: url("../img/olivillo.jpeg");
+    }
+
+    .bg-verdolaga {
+        background-image: url("../img/Portulaca_pilosa_SunnyFleming_1.jpg");
+    }
+
+    .bg-fabiana {
+        background-image: url("../img/fabiana.jpeg");
+    }
+
+    .bg-zanahoria {
+        background-image: url("../img/Daucus-carota.webp");
+    }
+
+    .bg-retortuño {
+        background-image: url("../img/retoruño.jpeg");
+    }
+
+    .bg-ramanegra {
+        background-image: url("../img//mata-o-rama-negra.webp");
+    }
+
+    .bg-tomillo {
+        background-image: url("../img/tomillo.jpeg");
+    }
+
+
+    .bg-coironpoa {
+        background-image: url("../img/poa\ ligularis.jpeg");
+    }
+
+    /* Falta stipa tenuis */
+    .bg-flechillaf {
+        background-image: url("../img/nassella-tenuissima.jpg");
+    }
+
+    .bg-cebadilla {
+        background-image: url("../img/cebadilla.jpeg");
+    }
+
+    .bg-coiron {
+        background-image: url("../img/pappostipa.jpg");
+    }
+
+    .bg-pastofino {
+        background-image: url("../img/Schismus-barbatus.jpeg");
+    }
+
+    .bg-flechilla {
+        background-image: url("../img/stipa-gynerioides.jpg");
+    }
+}

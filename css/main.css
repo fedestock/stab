@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -74,12 +75,10 @@ a {
 }
 
 header {
-  margin: 16px;
   padding: 16px;
   left: 0;
   right: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -717,6 +716,92 @@ main.aromatics p {
   font-size: 16px;
   line-height: 26px;
   color: #33312B;
+}
+
+.planta {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.planta .bg-molle {
+  background-image: url("../img/Schinus_johnstonii molle blanco.jpg");
+}
+.planta .bg-chañar {
+  background-image: url("../img/chañar.jpg");
+}
+.planta .bg-jarilla {
+  background-image: url("../img/jarilla.jpg");
+}
+.planta .bg-atamisqui {
+  background-image: url("../img/altamisqui.jpeg");
+}
+.planta .bg-calden {
+  background-image: url("../img/calden2.jpg");
+}
+.planta .bg-piquillin {
+  background-image: url("../img/piquilin.jpg");
+}
+.planta .bg-pichana {
+  background-image: url("../img/senna.jpg");
+}
+.planta .bg-llaolin {
+  background-image: url("../img/llaollin.jpg");
+}
+.planta .bg-zampa {
+  background-image: url("../img/zampa.jpeg");
+}
+.planta .bg-solupe {
+  background-image: url("../img/solupe.jpeg");
+}
+.planta .bg-chilladora {
+  background-image: url("../img/chilladora1.jpg");
+}
+.planta .bg-yaullin {
+  background-image: url("../img/llaullin.jpg");
+}
+.planta .bg-brusquilla {
+  background-image: url("../img/brusquilla.jpg");
+}
+.planta .bg-olivillo {
+  background-image: url("../img/olivillo.jpeg");
+}
+.planta .bg-verdolaga {
+  background-image: url("../img/Portulaca_pilosa_SunnyFleming_1.jpg");
+}
+.planta .bg-fabiana {
+  background-image: url("../img/fabiana.jpeg");
+}
+.planta .bg-zanahoria {
+  background-image: url("../img/Daucus-carota.webp");
+}
+.planta .bg-retortuño {
+  background-image: url("../img/retoruño.jpeg");
+}
+.planta .bg-ramanegra {
+  background-image: url("../img//mata-o-rama-negra.webp");
+}
+.planta .bg-tomillo {
+  background-image: url("../img/tomillo.jpeg");
+}
+.planta .bg-coironpoa {
+  background-image: url("../img/poa ligularis.jpeg");
+}
+.planta {
+  /* Falta stipa tenuis */
+}
+.planta .bg-flechillaf {
+  background-image: url("../img/nassella-tenuissima.jpg");
+}
+.planta .bg-cebadilla {
+  background-image: url("../img/cebadilla.jpeg");
+}
+.planta .bg-coiron {
+  background-image: url("../img/pappostipa.jpg");
+}
+.planta .bg-pastofino {
+  background-image: url("../img/Schismus-barbatus.jpeg");
+}
+.planta .bg-flechilla {
+  background-image: url("../img/stipa-gynerioides.jpg");
 }
 
 .modal {
