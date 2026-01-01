@@ -1,0 +1,178 @@
+// variables
+@use "../utilities/variables" as *;
+
+/* Portada */
+main.aromatics {
+    padding: 0 16px;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: "lato", sans-serif;
+        font-weight: 700;
+        font-size: 34px;
+        color: $ocre;
+    }
+
+    h3 {
+        font-family: "Lato", sans-serif;
+        font-size: 21px;
+        font-weight: 600;
+        color: $text;
+    }
+
+    p {
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.aromatics-intro {
+    padding: 0 16px;
+    font-family: "Lato", sans-serif;
+
+    h2 {
+        font-weight: 700;
+        font-size: 34px;
+        color: $ocre;
+    }
+}
+
+/* Catalogo */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+
+    .planta {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+
+        .bg-azafran {
+            background-image: url("../img/azafran.jpeg");
+        }
+
+        .bg-romero {
+            background-image: url("../img/romero.jpeg");
+        }
+
+        .bg-alcaparras {
+            background-image: url("../img/alcaparras.jpeg");
+        }
+
+        .bg-lavanda {
+            background-image: url("../img/lavanda-angustifolia.webp");
+        }
+
+        .bg-lavandin {
+            background-image: url("../img/lavandin.jpeg");
+        }
+
+        .bg-estragon {
+            background-image: url("../img/estragon.jpeg");
+        }
+
+        .bg-hisopo {
+            background-image: url("../img/hisopo.jpeg");
+        }
+
+        .bg-salvia {
+            background-image: url("../img/salvia-sclarea.jpeg");
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.modal {
+    z-index: 1112;
+
+    i {
+        color: #AD8020;
+        vertical-align: middle;
+        font-size: 34px;
+    }
+
+    .modal-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3px;
+
+        h5 {
+            font-weight: 300;
+            margin: 0;
+
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .modal-title {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 80px;
+    }
+
+    button {
+        background-color: transparent;
+        color: #33312B;
+        font-family: "lato";
+
+        &:hover {
+            background-color: #33312B;
+            color: white;
+            font-family: "lato";
+        }
+    }
+}
+
+.modal-body {
+    img {
+        width: 100%;
+    }
+}
+
+.modal-title {
+    color: $ocre;
+}
+
+.conclusion-aromatics {
+    padding: 34px 16px;
+    text-align: center;
+
+    h2 {
+        font-weight: 500;
+        font-size: 34px;
+        color: $ocre;
+    }
+
+    p {
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        color: $text;
+    }
+}

@@ -1,0 +1,19 @@
+// RESET
+@use 'base/reset';
+// VARIABLES
+@use 'utilities/variables';
+
+// HOME
+@use 'index';
+
+// AROMATICAS
+@use 'pages/aromaticas';
+
+// GANADERIA
+@use 'pages/ganaderia';
+
+// CONSERVACION
+@use 'pages/conservacion';
+
+// MODALS
+@use 'components/modals';

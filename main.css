@@ -1,0 +1,666 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+.card:hover {
+  border: solid 1px #AD8020;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bi {
+  font-size: 26px;
+  color: #AD8020;
+}
+
+.tarjeta-fullbg {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px;
+}
+
+.tarjeta-fullbg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
+  /* degrada el blur */
+  mask-image: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 70%);
+}
+
+.tarjeta-fullbg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 70%);
+  z-index: 2;
+}
+
+header {
+  margin: 16px;
+  padding: 16px;
+  left: 0;
+  right: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1111;
+}
+header .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+header .top h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #33312B;
+}
+header .top h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #AD8020;
+}
+header .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+}
+header .bottom ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+}
+header .bottom ul li {
+  list-style: none;
+}
+header .bottom ul li a {
+  color: #33312B;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+}
+header .bottom ul li a span {
+  color: #AD8020;
+}
+
+main .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 16px 34px 16px;
+}
+main .hero h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #AD8020;
+}
+main .hero h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #33312B;
+}
+main .principios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #702150, #581B3F);
+}
+main .principios .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 55px 16px;
+}
+main .principios .row img {
+  width: 50%;
+  filter: brightness(0) invert(1);
+  display: block;
+  margin: 0 auto;
+}
+main .principios .row p {
+  font-size: 16px;
+  line-height: 26px;
+}
+main .principios .row a {
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.grid-dosxtres {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  text-align: center;
+  padding: 34px 16px 16px 16px;
+}
+.grid-dosxtres h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #33312B;
+}
+
+.grid-uno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 16px;
+}
+.grid-uno h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #33312B;
+}
+
+.card:hover {
+  border: solid 1px #AD8020;
+}
+
+.caracterizacion-tecnica .portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 16px 34px 16px;
+  text-align: center;
+}
+.caracterizacion-tecnica .portada h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #AD8020;
+}
+.caracterizacion-tecnica .content-puntodos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  text-align: left;
+}
+.caracterizacion-tecnica .content-puntodos h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #33312B;
+}
+.caracterizacion-tecnica .content-puntodos p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.climatologia {
+  padding: 34px 16px 34px 16px;
+  text-align: center;
+}
+.climatologia h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #AD8020;
+}
+.climatologia .ambos {
+  gap: 16px;
+}
+
+.infraestructura {
+  padding: 34px 16px 34px 16px;
+}
+.infraestructura h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #AD8020;
+  text-align: center;
+}
+.infraestructura .planta {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.bg-corral {
+  background-image: url("../img/corrales-mangas.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 16px;
+  min-height: 180px;
+  display: flex;
+  align-items: flex-end;
+}
+
+h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+  z-index: 3;
+}
+
+.acceso {
+  height: 100vh;
+  background-image: url("../img/drone-estancia.jpg");
+  background-size: cover;
+  background-position: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.acceso .acceso::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 1;
+}
+.acceso h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: white;
+}
+.acceso .carta {
+  padding: 16px;
+  background-color: rgba(5, 5, 5, 0.5);
+  border-radius: 7px;
+  color: white;
+}
+.acceso .carta h3 {
+  color: white;
+}
+
+.inf-hab {
+  padding: 34px 16px 34px 16px;
+  text-align: center;
+  gap: 16px;
+}
+.inf-hab h2 {
+  color: #AD8020;
+  font-family: "Lato", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.carta {
+  padding: 16px;
+  background-color: white;
+  border-radius: 7px;
+  color: #33312B;
+}
+.carta h3 {
+  color: #33312B;
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+.carta p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #33312B;
+  text-align: center;
+}
+
+.conclusion {
+  padding: 34px 16px 34px 16px;
+  text-align: center;
+  background: linear-gradient(135deg, #702150, #581B3F);
+}
+.conclusion h2 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+.conclusion .carta {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 16px;
+}
+.conclusion .carta h5 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+.conclusion .carta p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+  text-align: center;
+}
+.conclusion h5 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  padding-top: 21px;
+}
+.conclusion .conclusion-fin .planta {
+  padding: 16px;
+}
+.conclusion .conclusion-fin .bg-mapa {
+  background-image: url("../img/drone-estancia.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 16px;
+}
+.conclusion .conclusion-fin .bg-mapa h6 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  z-index: 3;
+}
+.conclusion .conclusion-fin .bg-fin {
+  background-image: url("../img/drone-estancia.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 16px;
+}
+.conclusion .conclusion-fin .bg-fin h6 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  z-index: 3;
+}
+
+.analisis-fin {
+  padding: 34px 16px 34px 16px;
+  text-align: center;
+}
+.analisis-fin h2 {
+  color: #AD8020;
+  font-family: "Lato", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+.analisis-fin p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #33312B;
+  text-align: center;
+}
+.analisis-fin article h4 {
+  padding-top: 21px;
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #702150;
+}
+
+h2.faqs {
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #AD8020;
+  text-align: center;
+}
+
+.accordion {
+  padding: 16px;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1px;
+}
+
+.accordion-header {
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background-color: #332E23;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px;
+  border-radius: 7px;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #AD8020;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #AD8020;
+  color: white;
+  border-color: #AD8020;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-collapse {
+  border-radius: 0 0 7px 7px;
+  overflow: hidden;
+}
+
+.accordion-body {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
+  padding: 16px;
+  font-size: 15px;
+  line-height: 26px;
+  color: #33312B;
+}
+.accordion-body p {
+  margin-bottom: 8px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 55px 16px;
+  text-align: center;
+  background: linear-gradient(180deg, #702150, #360e25);
+}
+footer img {
+  width: 122px;
+  filter: brightness(0) invert(1);
+}
+footer h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+footer h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+}
+footer h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Portada */
+main.aromatics {
+  padding: 0 16px;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main.aromatics h2 {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #AD8020;
+}
+main.aromatics h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #33312B;
+}
+
+.aromatics-intro {
+  padding: 0 16px;
+}
+.aromatics-intro h2 {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #AD8020;
+}
+
+/* Catalogo */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.planta {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.planta a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  z-index: 1112;
+}
+
+.modal i {
+  color: #AD8020;
+  vertical-align: middle;
+  font-size: 34px;
+  margin-right: 3px;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header h4 {
+  font-weight: 300;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.modal-title {
+  display: flex;
+  align-items: center;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-footer button {
+  background-color: transparent;
+  color: #33312B;
+  font-family: "lato";
+}
+
+.modal-footer button:hover {
+  background-color: #33312B;
+  color: white;
+  font-family: "lato";
+}
+
+.modal-footer img {
+  width: 80px;
+}
+
+/*# sourceMappingURL=main.css.map */
