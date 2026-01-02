@@ -166,7 +166,12 @@
         align-items: center;
         gap: 25px;
 
-        .planta {
+        .planta map {
+            display: flex;
+            justify-content: center;
+        }
+
+        .planta fin {
             display: flex;
             justify-content: center;
         }
@@ -187,11 +192,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: end;
+        align-items: flex-end;
 
         h3 {
             font-family: "Lato", sans-serif;
-            font-size: 9px;
+            font-size: 12px;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -207,22 +212,17 @@
         align-items: center;
         gap: 25px;
 
-        img {
-            width: 135%;
-            object-fit: contain;
-            padding-top: 55px;
-        }
-
-
 
         h2 {
             text-align: left;
             padding-right: 250px;
+            padding-left: 250px;
 
         }
 
         p {
             padding-right: 250px;
+            padding-left: 250px;
         }
 
     }
