@@ -451,7 +451,7 @@ h6 {
   z-index: 3;
 }
 .conclusion .conclusion-fin .bg-fin {
-  background-image: url("../img/drone-estancia.jpg");
+  background-image: url("../img/campo-solar.webp");
   background-size: cover;
   background-position: center;
   border-radius: 7px;
@@ -1025,19 +1025,26 @@ main.aromatics p {
     align-items: center;
     gap: 25px;
   }
-  .conclusion-fin .planta map {
+  .conclusion-fin .planta {
     display: flex;
     justify-content: center;
-  }
-  .conclusion-fin .planta fin {
-    display: flex;
-    justify-content: center;
+    width: fit-content;
   }
   .analisis-fin div {
     padding: 0 250px;
   }
   .analisis-fin article {
     padding: 0 250px;
+  }
+  .cotizaciones {
+    padding: 55px 84px;
+  }
+  .cotizaciones h4 {
+    text-align: center;
+    font-size: 34px;
+    color: #AD8020;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
   }
   .aromatics {
     display: flex;
