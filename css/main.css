@@ -1037,6 +1037,10 @@ main.aromatics p {
     padding: 0 250px;
   }
   .cotizaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 55px 84px;
   }
   .cotizaciones h4 {

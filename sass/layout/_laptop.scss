@@ -184,6 +184,10 @@
     }
 
     .cotizaciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 55px 84px;
 
         h4 {
