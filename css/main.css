@@ -909,11 +909,254 @@ main.aromatics p {
 }
 
 @media (min-width: 1025px) {
-  .header .top {
+  header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+  }
+  header .bottom {
+    gap: 35px;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 84px 55px;
+  }
+  main .hero {
+    align-items: start;
+    text-align: left;
+  }
+  main .hero h1 {
+    font-size: 55px;
+    text-align: left;
+  }
+  main .hero h2 {
+    text-align: left !important;
+  }
+  main .principios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #702150, #581B3F);
+  }
+  .grid-dosxtres {
+    padding: 0 55px;
+  }
+  .caracterizacion-tecnica .portada {
+    padding: 55px 250px;
+  }
+  .content-puntodos .recursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-puntodos .recursos h3 {
+    text-align: center;
+  }
+  .content-puntodos .recursos p {
+    text-align: center;
+    width: 30%;
+  }
+  .content-puntodos .recursos-choclo {
+    padding: 0 250px;
+  }
+  .content-puntodos .choclo-dos {
+    padding: 0 250px;
+  }
+  .content-puntodos .choclo-dos-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-puntodos .choclo-dos-t h3 {
+    text-align: center;
+  }
+  .climatologia .ambos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .climatologia .ambos .card {
+    aspect-ratio: 1/1;
+  }
+  .infraestructura {
+    padding: 0 250px;
+  }
+  .infraestructura h2 {
+    text-align: center;
+  }
+  .infraestructura p {
+    text-align: center;
+    padding-bottom: 55px;
+  }
+  .infraestructura div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .infraestructura div .planta {
+    text-align: center;
+  }
+  .inf-hab {
+    padding: 0 250px;
+  }
+  .inf-hab h2 {
+    padding-top: 84px;
+  }
+  .conclusion .carta {
+    transform: translateX(50%);
+    width: 50%;
+  }
+  .conclusion-fin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .conclusion-fin .planta {
+    display: flex;
+    justify-content: center;
+  }
+  .analisis-fin div {
+    padding: 0 250px;
+  }
+  .analisis-fin article {
+    padding: 0 250px;
+  }
+  .aromatics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  .aromatics h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #33312B;
+  }
+  .aromatics-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .aromatics-intro img {
+    width: 135%;
+    object-fit: contain;
+    padding-top: 55px;
+  }
+  .aromatics-intro h2 {
+    text-align: left;
+    padding-right: 250px;
+  }
+  .aromatics-intro p {
+    padding-right: 250px;
+  }
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+  .planta {
+    aspect-ratio: none;
+  }
+  .ganaderia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ganaderia h1 {
+    width: 50%;
+    align-self: center;
+  }
+  .ganaderia-r {
+    padding: 0 250px;
+  }
+  .conser-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 0 250px;
+  }
+  .conser-intro .arom-tittle {
+    font-family: "Lato", sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+    color: #AD8020;
+  }
+  .conser-intro p {
+    text-align: center;
+    font-size: 21px;
+    width: 80%;
+    align-self: center;
+  }
+  .conservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .conservation .conser {
+    color: #AD8020;
+  }
+  .conser {
+    text-align: center;
+  }
+  .conclu-conser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 84px;
+  }
+  .catalogo-b {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+  .catalogo-c {
+    display: grid;
+    grid-template-areas: "a b c d";
+    gap: 16px;
+    padding: 16px;
+  }
+  .catalogo-c .coiron {
+    grid-area: b;
+  }
+  .catalogo-c .flecha {
+    grid-area: c;
+  }
+  .catalogo-d {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+  .catalogo-d .pasto-fino {
+    grid-column: 2/3;
   }
 }
 

@@ -2,12 +2,349 @@
 @use "../utilities/variables" as *;
 
 @media (min-width: 1025px) {
-    .header {
-        .top {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .bottom {
+            gap: 35px;
+        }
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 84px 55px;
+
+        .hero {
+            align-items: start;
+            text-align: left;
+
+            h1 {
+                font-size: 55px;
+                text-align: left;
+            }
+
+            h2 {
+                text-align: left !important;
+            }
+        }
+
+        .principios {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+
+            background: linear-gradient(135deg, $violeta, #581B3F);
+
+        }
+
+    }
+
+    .grid-dosxtres {
+        padding: 0 55px
+    }
+
+    .caracterizacion-tecnica {
+
+        .portada {
+            padding: 55px 250px
+        }
+
+    }
+
+    .content-puntodos {
+
+        .recursos {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                width: 30%;
+            }
+        }
+
+        .recursos-choclo {
+            padding: 0 250px;
+        }
+
+        .choclo-dos {
+            padding: 0 250px;
+        }
+    }
+
+    .content-puntodos {
+
+        .choclo-dos-t {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+    .climatologia {
+
+        .ambos {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+
+            gap: 25px;
+
+            .card {
+                aspect-ratio: 1/1;
+            }
+        }
+    }
+
+    .infraestructura {
+        padding: 0 250px;
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding-bottom: 55px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            gap: 25px;
+
+            .planta {
+                text-align: center;
+            }
+        }
+    }
+
+    .inf-hab {
+        padding: 0 250px;
+
+        h2 {
+            padding-top: 84px;
+        }
+    }
+
+    .conclusion {
+        .carta {
+            transform: translateX(50%);
+            width: 50%;
+        }
+    }
+
+    .conclusion-fin {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        .planta {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .analisis-fin {
+        div {
+            padding: 0 250px;
+        }
+
+        article {
+            padding: 0 250px;
+        }
+    }
+
+    // ===================================== AROMATICAS
+    .aromatics {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+
+        h3 {
+            font-family: "Lato", sans-serif;
+            font-size: 9px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $text;
+        }
+    }
+
+    .aromatics-intro {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        img {
+            width: 135%;
+            object-fit: contain;
+            padding-top: 55px;
+        }
+
+
+
+        h2 {
+            text-align: left;
+            padding-right: 250px;
+
+        }
+
+        p {
+            padding-right: 250px;
+        }
+
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .planta {
+        aspect-ratio: none;
+    }
+
+
+
+
+    // GANADERIA
+
+    .ganaderia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            width: 50%;
+            align-self: center;
+        }
+    }
+
+    .ganaderia-r {
+        padding: 0 250px;
+    }
+
+
+    // CONSERVACION
+
+
+    .conser-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        padding: 0 250px;
+
+        .arom-tittle {
+            font-family: "Lato", sans-serif;
+            font-size: 55px;
+            font-weight: 800;
+            text-align: center;
+            color: $ocre;
+        }
+
+        p {
+            text-align: center;
+            font-size: 21px;
+            width: 80%;
+            align-self: center;
+        }
+    }
+
+    .conservation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .conser {
+            color: $ocre;
+        }
+    }
+
+    .conser {
+
+        text-align: center;
+
+    }
+
+    .conclu-conser {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        padding-bottom: 84px;
+    }
+
+    .catalogo-b {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .catalogo-c {
+        display: grid;
+        grid-template-areas: "a b c d";
+        gap: 16px;
+        padding: 16px;
+
+        .coiron {
+            grid-area: b;
+        }
+
+        .flecha {
+            grid-area: c;
+        }
+    }
+
+    .catalogo-d {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding: 16px;
+
+        .pasto-fino {
+            grid-column: 2 / 3;
         }
     }
 }
