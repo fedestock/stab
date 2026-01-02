@@ -100,7 +100,7 @@ header .top h4 {
   letter-spacing: 1px;
   color: #33312B;
 }
-header .top h2 {
+header .top h2 a {
   font-family: "Lato", sans-serif;
   font-size: 32px;
   font-weight: 600;
@@ -287,6 +287,30 @@ main .principios .row a {
 
 .bg-corral {
   background-image: url("../img/corrales-mangas.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 16px;
+  min-height: 180px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bg-alambre {
+  background-image: url("../img/alambrado-solar.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 16px;
+  min-height: 180px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bg-cuadros {
+  background-image: url("../img/pastoreo-solar.webp");
   background-size: cover;
   background-position: center;
   border-radius: 7px;
@@ -882,6 +906,15 @@ main.aromatics p {
 
 .modal-footer img {
   width: 80px;
+}
+
+@media (min-width: 1025px) {
+  .header .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,13 @@
+// VARIABLES
+@use "../utilities/variables" as *;
+
+@media (min-width: 1025px) {
+    .header {
+        .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

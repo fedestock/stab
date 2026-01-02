@@ -120,7 +120,7 @@ header {
             color: $text;
         }
 
-        h2 {
+        h2 a {
             font-family: "Lato", sans-serif;
             font-size: 32px;
             font-weight: 600;
@@ -350,6 +350,36 @@ main {
 
 .bg-corral {
     background-image: url("../img/corrales-mangas.webp");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 7px;
+    overflow: hidden;
+
+    padding: 16px;
+    min-height: 180px; // 🔥 CLAVE
+
+    display: flex;
+    align-items: flex-end; // opcional: texto abajo
+}
+
+.bg-alambre {
+    background-image: url("../img/alambrado-solar.webp");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 7px;
+    overflow: hidden;
+
+    padding: 16px;
+    min-height: 180px; // 🔥 CLAVE
+
+    display: flex;
+    align-items: flex-end; // opcional: texto abajo
+}
+
+.bg-cuadros {
+    background-image: url("../img/pastoreo-solar.webp");
     background-size: cover;
     background-position: center;
 
