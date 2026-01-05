@@ -407,6 +407,13 @@ h6 {
   font-size: 34px;
   font-weight: 600;
 }
+.conclusion .coti {
+  width: fit-content;
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #AD8020;
+}
 .conclusion .carta {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -1030,11 +1037,26 @@ main.aromatics p {
     justify-content: center;
     width: fit-content;
   }
+  .analisis-fin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
   .analisis-fin div {
     padding: 0 250px;
   }
   .analisis-fin article {
     padding: 0 250px;
+  }
+  .analisis-fin .coti {
+    width: fit-content;
+    font-family: "Lato", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: #AD8020;
+    align-self: center;
   }
   .cotizaciones {
     display: flex;
