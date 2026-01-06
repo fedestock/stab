@@ -1072,6 +1072,9 @@ main.aromatics p {
     font-family: "Lato", sans-serif;
     font-weight: 700;
   }
+  .faqs-section {
+    padding: 0 250px;
+  }
   .modal h2 {
     color: #AD8020;
   }
@@ -1113,6 +1116,13 @@ main.aromatics p {
   }
   .planta {
     aspect-ratio: none;
+  }
+  embed.pdf {
+    border-radius: 12px;
+    height: 450px;
+    width: 100%;
+    padding: 0 84px;
+    margin-bottom: 55px;
   }
   .ganaderia {
     display: flex;
