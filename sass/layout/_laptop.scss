@@ -378,6 +378,38 @@ embed.pdf {
     }
 }
 
+.fodix-row {
+        padding-top: 34px;
+        padding-bottom: 84px;
+        padding-left: 250px;
+        padding-right: 250px;
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 25px;
+            text-align: left;
+            color: white;
+            margin: 25px;
+            width: calc(100% - margin);
+            
+
+            div {
+                min-width: 0;
+                padding: 16px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            }
+
+            .ocre {
+                background-color: $ocre;
+            }
+
+            ul li {
+                list-style: none;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+
 
 // CONSERVACION
 
