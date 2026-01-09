@@ -930,7 +930,6 @@ main.aromatics p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 84px 55px;
   }
   main .hero {
     align-items: start;
@@ -1037,6 +1036,39 @@ main.aromatics p {
     justify-content: center;
     width: fit-content;
   }
+  .fodix {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    text-align: left;
+    color: white;
+    margin: 25px;
+    width: calc(100% - margin);
+  }
+  .fodix div {
+    min-width: 0;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+  .fodix ul li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .fodix .marron {
+    background-color: #352D2C;
+  }
+  .fodix .violeta {
+    background-color: #581B3F;
+  }
+  .fodix .ocre {
+    background-color: #AD8123;
+  }
+  .fodix .blanco {
+    background-color: white;
+    color: #352D2C;
+  }
   .analisis-fin {
     display: flex;
     flex-direction: column;
@@ -1050,7 +1082,7 @@ main.aromatics p {
   .analisis-fin article {
     padding: 0 250px;
   }
-  .analisis-fin .coti {
+  .coti {
     width: fit-content;
     font-family: "Lato", sans-serif;
     font-size: 21px;
@@ -1084,7 +1116,7 @@ main.aromatics p {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../img/jarilla.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../img/azafran.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1108,11 +1140,13 @@ main.aromatics p {
     align-items: center;
     gap: 25px;
   }
-  .aromatics-intro h2 {
+  .aromatics-intro .arom-tittle {
     padding-top: 55px;
-    text-align: left;
-    padding-right: 250px;
-    padding-left: 250px;
+    font-family: "Lato", sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+    color: #AD8020;
   }
   .aromatics-intro p {
     padding-right: 250px;
@@ -1135,17 +1169,32 @@ main.aromatics p {
     margin-bottom: 55px;
   }
   .ganaderia {
+    min-width: 100%;
+    margin: 0;
+    height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../img/vacasg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .ganaderia h1 {
-    width: 50%;
-    align-self: center;
+    font-size: 84px;
+    color: white;
   }
   .ganaderia-r {
     padding: 0 250px;
+  }
+  .ganaderia-r .arom-tittle {
+    padding-top: 55px;
+    font-family: "Lato", sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+    color: #AD8020;
   }
   .conserva {
     height: 85vh;

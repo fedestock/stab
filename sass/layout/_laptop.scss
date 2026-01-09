@@ -19,7 +19,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 84px 55px;
+        
 
         .hero {
             align-items: start;
@@ -175,6 +175,46 @@
 
     }
 
+    .fodix {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            text-align: left;
+            color: white;
+            margin: 25px;
+            width: calc(100% - margin);
+
+            div {
+                min-width: 0;
+                padding: 16px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            }
+
+            ul li {
+                list-style: none;
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            .marron {
+                background-color: #352D2C;
+            }
+
+            .violeta {
+                background-color: #581B3F;
+            }
+
+            .ocre {
+                background-color: #AD8123;
+            }
+
+            .blanco {
+                background-color: white;
+                color: #352D2C;
+            }
+        }
+
     .analisis-fin {
         display: flex;
         flex-direction: column;
@@ -189,243 +229,261 @@
         article {
             padding: 0 250px;
         }
-
-        .coti {
-            width: fit-content;
-            font-family: "Lato", sans-serif;
-            font-size: 21px;
-            font-weight: 700;
-            color: $ocre;
-            align-self: center;
-        }
     }
 
-    .cotizaciones {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 55px 84px;
-
-        h5 {
-            text-align: center;
-            font-size: 21px;
-            color: $ocre;
-            font-family: "Lato", sans-serif;
-            font-weight: 700;
-        }
+    .coti {
+        width: fit-content;
+        font-family: "Lato", sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        color: $ocre;
+        align-self: center;
     }
 
-    .faqs-section {
-        padding: 0 250px;
+
+.cotizaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 84px;
+
+    h5 {
+        text-align: center;
+        font-size: 21px;
+        color: $ocre;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+    }
+}
+
+.faqs-section {
+    padding: 0 250px;
+}
+
+.modal h2 {
+    color: $ocre;
+}
+
+
+
+// ===================================== AROMATICAS
+main.aromatics {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)), url("../../img/azafran.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .arom-cover {
+        font-size: 84px;
+        color: white;
     }
 
-    .modal h2 {
+
+
+    h3 {
+        font-family: "Lato", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $text;
+    }
+}
+
+.aromatics-intro {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+
+    .arom-tittle {
+        padding-top: 55px;
+        font-family: "Lato", sans-serif;
+        font-size: 55px;
+        font-weight: 500;
+        text-align: center;
         color: $ocre;
     }
 
-
-
-    // ===================================== AROMATICAS
-    main.aromatics {
-        height: 85vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.45),
-                rgba(0, 0, 0, 0.45)), url("../../img/jarilla.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        .arom-cover {
-            font-size: 84px;
-            color: white;
-        }
-
-
-
-        h3 {
-            font-family: "Lato", sans-serif;
-            font-size: 12px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: $text;
-        }
+    p {
+        padding-right: 250px;
+        padding-left: 250px;
     }
 
-    .aromatics-intro {
+}
 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.planta {
+    aspect-ratio: none;
+}
+
+embed.pdf {
+    border-radius: 12px;
+    height: 450px;
+    width: 100%;
+    padding: 0 84px;
+    margin-bottom: 55px;
+}
 
 
-        h2 {
-            padding-top: 55px;
-            text-align: left;
-            padding-right: 250px;
-            padding-left: 250px;
 
-        }
 
-        p {
-            padding-right: 250px;
-            padding-left: 250px;
-        }
+// GANADERIA
 
+.ganaderia {
+    min-width: 100%;
+    margin: 0;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)), url("../../img/vacasg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1 {
+        font-size: 84px;
+        color: white;
+    }
+}
+
+.ganaderia-r {
+    padding: 0 250px;
+    .arom-tittle {
+        padding-top: 55px;
+        font-family: "Lato", sans-serif;
+        font-size: 55px;
+        font-weight: 500;
+        text-align: center;
+        color: $ocre;
+    }
+}
+
+
+// CONSERVACION
+
+
+.conserva {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)), url("../../img/alcaparras.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .conserva-cover {
+        font-size: 84px;
+        color: white;
+    }
+}
+
+.conser-intro {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    padding: 0 250px;
+
+    .arom-tittle {
+        padding-top: 55px;
+        font-family: "Lato", sans-serif;
+        font-size: 55px;
+        font-weight: 500;
+        text-align: center;
+        color: $ocre;
     }
 
-    .catalogo {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 16px;
-        padding: 16px;
+    p {
+        text-align: center;
+        font-size: 21px;
+        width: 80%;
+        align-self: center;
     }
+}
 
-    .planta {
-        aspect-ratio: none;
-    }
-
-    embed.pdf {
-        border-radius: 12px;
-        height: 450px;
-        width: 100%;
-        padding: 0 84px;
-        margin-bottom: 55px;
-    }
-
-
-
-
-    // GANADERIA
-
-    .ganaderia {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h1 {
-            width: 50%;
-            align-self: center;
-        }
-    }
-
-    .ganaderia-r {
-        padding: 0 250px;
-    }
-
-
-    // CONSERVACION
-
-
-    .conserva {
-        height: 85vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.45),
-                rgba(0, 0, 0, 0.45)), url("../../img/alcaparras.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        .conserva-cover {
-            font-size: 84px;
-            color: white;
-        }
-    }
-
-    .conser-intro {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-
-        padding: 0 250px;
-
-        .arom-tittle {
-            padding-top: 55px;
-            font-family: "Lato", sans-serif;
-            font-size: 55px;
-            font-weight: 500;
-            text-align: center;
-            color: $ocre;
-        }
-
-        p {
-            text-align: center;
-            font-size: 21px;
-            width: 80%;
-            align-self: center;
-        }
-    }
-
-    .conservation {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .conser {
-            color: $ocre;
-        }
-    }
+.conservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .conser {
+        color: $ocre;
+    }
+}
 
-        text-align: center;
+.conser {
 
+    text-align: center;
+
+}
+
+.conclu-conser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    padding-bottom: 84px;
+}
+
+.catalogo-b {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.catalogo-c {
+    display: grid;
+    grid-template-areas: "a b c d";
+    gap: 16px;
+    padding: 16px;
+
+    .coiron {
+        grid-area: b;
     }
 
-    .conclu-conser {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-
-        padding-bottom: 84px;
+    .flecha {
+        grid-area: c;
     }
+}
 
-    .catalogo-b {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-        padding: 16px;
+.catalogo-d {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+
+    .pasto-fino {
+        grid-column: 2 / 3;
     }
-
-    .catalogo-c {
-        display: grid;
-        grid-template-areas: "a b c d";
-        gap: 16px;
-        padding: 16px;
-
-        .coiron {
-            grid-area: b;
-        }
-
-        .flecha {
-            grid-area: c;
-        }
-    }
-
-    .catalogo-d {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-        padding: 16px;
-
-        .pasto-fino {
-            grid-column: 2 / 3;
-        }
-    }
+}
 }
